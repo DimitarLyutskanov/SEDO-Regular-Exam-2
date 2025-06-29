@@ -28,9 +28,9 @@ jobs:
         run: dotnet build --no-restore --configuration Release
 
       - name: Run unit tests
-        run: dotnet vstest Horizons.Tests.Unit/Horizons.Tests.Unit.csproj --no-build --no-restore --verbosity normal
+        run: dotnet vstest Horizons.Tests.Unit/Horizons.Tests.Unit.csproj
 
       - name: Run integration tests
-        run: dotnet vstest Horizons.Tests.Integration/Horizons.Tests.Integration.csproj --no-build --no-restore --verbosity normal 
+        run: dotnet vstest Horizons.Tests.Integration/Horizons.Tests.Integration.csproj
 
           
